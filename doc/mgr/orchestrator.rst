@@ -237,7 +237,7 @@ This is an overview of the current implementation status of the orchestrators.
  apply mgr                           ⚪      ✔
  apply mon                           ✔      ✔
  apply nfs                           ✔      ✔
- apply osd                           ✔      ✔
+ apply osd                           ❌      ✔
  apply rbd-mirror                    ✔      ✔
  apply cephfs-mirror                 ⚪      ✔
  apply grafana                       ⚪      ✔
@@ -247,19 +247,42 @@ This is an overview of the current implementation status of the orchestrators.
  apply rgw                           ✔       ✔
  apply -i <container spec>           ⚪      ✔
  apply snmp-gateway                  ❌      ✔
+ apply -i <ingress spec>             ⚪      ✔
+ apply nvmeof                        ⚪      ✔
+ apply smb                           ⚪      ✔
+ apply mgmt-gateway                  ❌      ✔
+ apply oauth2-proxy                  ❌      ✔
+ apply jaeger                        ⚪      ✔
+ apply crash                         ⚪      ✔
+ apply ceph-exporter                 ⚪      ✔
+ apply loki                          ⚪      ✔
+ apply promtail                      ⚪      ✔
+ apply alloy                         ⚪      ✔
+ apply pushgateway                   ⚪      ✔
  host add                            ⚪      ✔
  host ls                             ✔      ✔
  host rm                             ⚪      ✔
  host maintenance enter              ❌      ✔
  host maintenance exit               ❌      ✔
+ host drain                          ⚪      ✔
+ host drain stop                     ⚪      ✔
+ host set-addr                       ⚪      ✔
+ host label add                      ✔      ✔
+ host label rm                       ✔      ✔
+ host ok-to-stop                     ⚪      ✔
+ host rescan                         ⚪      ✔
  daemon {stop,start,...}             ⚪      ✔
- device light                        ⚪      ✔
+ device light                        ✔      ✔
  device ls                           ✔      ✔
+ device replace                      ⚪      ✔
+ device zap                          ✔      ✔
  daemon add iscsi                    ⚪      ✔
  daemon add mds                      ⚪      ✔
  daemon add nfs                      ⚪      ✔
  daemon add rbd-mirror               ⚪      ✔
  daemon add rgw                      ⚪      ✔
+ daemon add nvmeof                   ⚪      ✔
+ daemon add osd                      ❌      ✔
  ls                                  ✔      ✔
  ps                                  ✔      ✔
  status                              ✔      ✔
